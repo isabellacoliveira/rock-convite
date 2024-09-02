@@ -36,7 +36,7 @@ function App() {
         <button className='actions' onClick={() => scrollToSection('horario')}>Horário</button>
         <button className='actions' onClick={() => scrollToSection('comprar')}>Comprar</button>
         <button className='actions' onClick={() => scrollToSection('tema')}>Tema</button>
-        <button onClick={playMusic}>
+        <button onClick={playMusic} className='actions'>
           {isPlaying ? 'Parar' : 'ROCK!!'}
         </button>
         <audio ref={audioRef} src={sweetChild} />
