@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 .App {
   text-align: center;
 }
@@ -14,14 +16,73 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #000000, #0d0d0d, #1a1a1a, #262626, #333333, #4d4d4d, #1a1a1a, #000000);
+  background-size: 200% 200%;
+  color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  animation: waterColorChange 5s ease infinite;
+}
+
+@keyframes waterColorChange {
+  0% {
+    background-position: 0% 50%;
+    background-color: #000000;
+  }
+  25% {
+    background-position: 50% 50%;
+    background-color: #0d0d0d;
+  }
+  50% {
+    background-position: 100% 50%;
+    background-color: #1a1a1a;
+  }
+  75% {
+    background-position: 50% 50%;
+    background-color: #333333;
+  }
+  100% {
+    background-position: 0% 50%;
+    background-color: #000000;
+  }
+}
+
+
+@keyframes rockAnimation {
+  0% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
+
+.corpo {
+  background-color: transparent;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 90px;
+  font-family: 'Bebas Neue', sans-serif;
+  color: #e63946;
+  display: flex; 
+  flex-direction: row;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); 
+
+  p{
+    animation: rockAnimation 0.5s infinite alternate; 
+  }
+}
+
+
+.par{
+  background: linear-gradient(270deg, rgb(152, 0, 180) 0%, rgb(225, 0, 112) 102.13%) text;
 }
 
 .App-link {
@@ -35,4 +96,56 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav{
+  width: 100%;
+  background-color: #1a1a1a;
+  height: 50px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  justify-content: space-around;
+  display: flex;
+}
+
+.detalhes{
+  background-color: #333333;
+  border-radius: 10px;
+  width: 90%;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.local{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.pinkfloyd{
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-right: 40px;
+}
+
+.actions{
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.rollingStones{
+  height: 200px;
+  margin-bottom: 60px;
+}
+
+.queen{
+  border-radius: 20px;
 }
