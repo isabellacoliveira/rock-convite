@@ -78,6 +78,38 @@
   p{
     animation: rockAnimation 0.5s infinite alternate; 
   }
+
+  .container{
+    background-color: transparent;
+  }
+
+  @media (min-width: 300px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 50px;
+
+    img{
+      width: 270px;
+      height: 360px;
+    }
+
+    .container{
+      background-color: #333333;
+      width: 300px;
+      border-radius: 20px;
+      padding: 20px 20px 20px 20px;
+    }
+  }
+}
+
+.tocando{
+  @media (min-width: 300px) {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    margin-top: 40px;
+  }
 }
 
 
@@ -119,6 +151,36 @@
   align-items: center;
   text-align: center;
   justify-content: center;
+  font-family: "Courier New", monospace;
+
+  @media (min-width: 300px) {
+    margin-top: 40px;
+
+    .local{
+      flex-direction: column;
+
+      display: grid;
+      place-items: center; 
+
+      img{
+        margin: 0 auto;
+      }
+
+      .place{
+        padding-top: 20px;
+
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+
+    .titulo{
+      padding-top: 10px;
+      font-size: 30px;
+    }
+
+  }
 }
 
 .local{
@@ -145,8 +207,36 @@
 .rollingStones{
   height: 200px;
   margin-bottom: 60px;
+  margin-top: 60px;
+
 }
 
+.data{
+  @media (min-width: 300px) {
+      font-size: 30px;
+      font-family: 'Bebas Neue', sans-serif;
+      color: #e63946;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); 
+  }
+}
 .queen{
   border-radius: 20px;
+  margin-bottom: 30px;
+
+  @media (min-width: 300px) {
+    width: 300px;
+    height: 200px;
+  }
 }
+
+.comprar{
+   width: 70%;
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+
+.comprar:active {
+  background-color: #a94442; 
+  border-color: #a94442; 
+}
+
